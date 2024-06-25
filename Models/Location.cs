@@ -20,13 +20,13 @@ namespace CsharpAdvanced23_24.Models
 
         public Features LocationFeatures { get; set; } // Changed name to LocationFeatures to avoid error CS0102
 
-        public List<Image> Images { get; set; } // One-way many-to-1 relationship with Image
+        public List<Image>? Images { get; set; } // One-way many-to-1 relationship with Image
 
         public float PricePerDay { get; set; }
 
-        public List<Reservation> Reservations { get; set; } // Two-way many-to-1 relationship with Reservation
+        public List<Reservation>? Reservations { get; set; } // Two-way many-to-1 relationship with Reservation
 
-        public Landlord Landlord { get; set; } // Two-way 1-to-many relationship with Landlord
+        public Landlord? Landlord { get; set; } // Two-way 1-to-many relationship with Landlord
 
         [Flags]
         public enum Features

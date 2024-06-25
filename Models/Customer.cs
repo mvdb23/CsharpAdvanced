@@ -12,6 +12,6 @@ namespace CsharpAdvanced23_24.Models
 
         public string Email { get; set; }
 
-        public List<Reservation> Reservations { get; set; } // Two-way many-to-1 relationship with Reservation
+        public List<Reservation>? Reservations { get; set; } // Two-way many-to-1 relationship with Reservation
     }
 }
